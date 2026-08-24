@@ -27,6 +27,14 @@ public:
     //
     // Get the widgets native handle 
     QWidget *qtNativeHandle();
+
+    //
+    // Set width
+    void setWidth(int w);
+
+    //
+    // Set height
+    void setHeight(int h);
 private:
     struct Impl;
     std::unique_ptr<Impl> impl;

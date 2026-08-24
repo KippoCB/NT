@@ -1,10 +1,10 @@
 [System]
-cbde.system.core.sysname="CBDE LonghornRe"
-cbde.system.core.channel="Release Candidate"
+cbde.system.core.sysname="CBDE NT"
+cbde.system.core.channel="Developer Release"
 cbde.system.core.configuration="Debug"
 cbde.system.core.evaluation="true"
 
-cbde.system.core.version="13.200726-test-2044"
+cbde.system.core.version="2.240826-main-1232"
 cbde.system.core.showversion="true"
 
 cbde.system.core.basedir="/data/data/com.termux/files/cbde"

@@ -9,7 +9,7 @@
 
 class LayoutV : public QWidget {
 public: 
-    LayoutV(Widget parent);
+    LayoutV();
     ~LayoutV();
 
     //

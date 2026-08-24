@@ -10,7 +10,7 @@ QVBoxLayout *LayoutV::qtNativeHandle() {
     return &impl->layout;
 }
 
-LayoutV::LayoutV(Widget parent) :
+LayoutV::LayoutV() :
     impl(std::make_unique<Impl>()) 
 {
     

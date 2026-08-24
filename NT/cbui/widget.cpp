@@ -39,5 +39,13 @@ Widget::Widget(int widgetType) :
 Widget::~Widget() = default;
 
 void Widget::setParent(Widget &parent) {
-    impl->widget.setParent(Widget::qtNativeHandle());
+    impl->widget.setParent(parent.qtNativeHandle());
+}
+
+void Widget::setWidth(int w) {
+    impl->widget.setFixedWidth(w);
+}
+
+void Widget::setHeight(int h) {
+    impl->widget.setFixedHeight(h);
 }
