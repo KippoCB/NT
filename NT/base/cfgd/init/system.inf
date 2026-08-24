@@ -1,0 +1,16 @@
+[System]
+cbde.system.core.sysname="CBDE LonghornRe"
+cbde.system.core.channel="Release Candidate"
+cbde.system.core.configuration="Debug"
+cbde.system.core.evaluation="true"
+
+cbde.system.core.version="13.200726-test-2044"
+cbde.system.core.showversion="true"
+
+cbde.system.core.basedir="/data/data/com.termux/files/cbde"
+cbde.system.core.sysdir="/data/data/com.termux/files/cbde/CBDE"
+cbde.system.core.appdir="/data/data/com.termux/files/cbde/user/Desktop"
+cbde.system.core.bdirshort="/CBDE"
+
+[Desktop]
+cbde.system.desktop.wp="/data/data/com.termux/files/cbde/CBDE/longhornalt.jpg"

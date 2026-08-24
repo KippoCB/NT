@@ -1,0 +1,7 @@
+[
+    {
+        "directory": "/data/data/com.termux/files/home/cbdent",
+        "command": "g++ -I./NT main.cpp",
+        "file": "main.cpp"
+    }
+]
