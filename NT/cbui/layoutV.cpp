@@ -1,3 +1,19 @@
+//========= Coypright (C) CBDE, 2026, All Rights Reserved ==========
+//
+// File:
+//      LayoutV.cpp
+//
+// Purpose:
+//      This is the vertical layout implementation for cbui.
+//
+// Author:
+//      Vilho Salokannel <github.com/KippoCB>
+//
+// Edits:
+//      24-08-26: Create | Vilho Salokannel <github.com/KippoCB>
+//
+//==================================================================
+
 #include "layoutV.h"
 
 struct LayoutV::Impl {
@@ -28,4 +44,22 @@ void LayoutV::setParent(Widget &parent) {
 // Add a stretch 
 void LayoutV::addStretch() {
     impl->layout.addStretch();
+}
+
+//
+// Add a widget 
+void LayoutV::addWidget(Widget &widget) {
+    impl->layout.addWidget(widget.qtNativeHandle());
+}
+
+//
+// Add layout vert 
+void LayoutV::addLayoutV(LayoutV &lyt) {
+    impl->layout.addLayout(lyt.qtNativeHandle());
+}
+
+//
+// Add a label 
+void LayoutV::addLabel(Label &label) {
+    impl->layout.addWidget(label.qtNativeHandle());
 }

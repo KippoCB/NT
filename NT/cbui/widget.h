@@ -1,3 +1,22 @@
+//========= Coypright (C) CBDE, 2026, All Rights Reserved ==========
+//
+// File:
+//      widget.h 
+//
+// Purpose:
+//      This is the cbui widget class. It abstracts qt away via 
+//      PImpl and exposes Qt functionality through qtNativeHandle 
+//      which returns the pointer to the QWidget.
+//
+// Author:
+//      Vilho Salokannel <github.com/KippoCB>
+//
+// Edits:
+//      23-08-26: Create | Vilho Salokannel <github.com/KippoCB>
+//      24-08-26: Add show/hide methods | Vilho Salokannel <github.com/KippoCB>
+//
+//==================================================================
+
 #pragma once 
 
 #include <memory>
@@ -35,6 +54,14 @@ public:
     //
     // Set height
     void setHeight(int h);
+
+    //
+    // Show widget 
+    void show();
+
+    //
+    // Hide widget 
+    void hide();
 private:
     struct Impl;
     std::unique_ptr<Impl> impl;

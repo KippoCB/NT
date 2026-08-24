@@ -1,3 +1,19 @@
+//========= Coypright (C) CBDE, 2026, All Rights Reserved ==========
+//
+// File:
+//      label.h 
+//
+// Purpose:
+//      Contains the Label class of the cbui Qt wrapper. 
+//
+// Author:
+//      Vilho Salokannel <github.com/KippoCB>
+//
+// Edits:
+//      24-08-26: Create | Vilho Salokannel <github.com/KippoCB>
+//
+//==================================================================
+
 #pragma once 
 
 #include <memory>
@@ -20,7 +36,7 @@ public:
 
     //
     // Set parent
-    void setParent(Widget parent);
+    void setParent(Widget &parent);
 
     //
     // Set the text
@@ -29,6 +45,14 @@ public:
     //
     // Return the native qt handle 
     QLabel *qtNativeHandle();
+
+    //
+    // Show the label 
+    void show();
+
+    //
+    // Hide the label 
+    void hide();
 private:
     struct Impl;
     std::unique_ptr<Impl> impl;

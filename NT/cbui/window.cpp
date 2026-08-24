@@ -1,3 +1,20 @@
+//========= Coypright (C) CBDE, 2026, All Rights Reserved ==========
+//
+// File:
+//      window.cpp 
+//
+// Purpose:
+//      This is the cbui window class. It wraps around QMainWindow 
+//      using Pimpl.
+//
+// Author:
+//      Vilho Salokannel <github.com/KippoCB>
+//
+// Edits:
+//      23-08-26: Create | Vilho Salokannel <github.com/KippoCB>
+//
+//==================================================================
+
 #include "window.h"
 
 

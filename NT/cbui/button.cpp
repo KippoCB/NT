@@ -1,5 +1,21 @@
-#include "button.h"
+//========= Coypright (C) CBDE, 2026, All Rights Reserved ==========
+//
+// File:
+//      button.cpo 
+//
+// Purpose:
+//      This is the implementation of the cbui button class.
+//
+// Author:
+//      Vilho Salokannel <github.com/KippoCB>
+//
+// Edits:
+//      23-08-26: Create | Vilho Salokannel <github.com/KippoCB>
+//      24-08-26: Add show/hide methods | Vilho Salokannel <github.com/KippoCB>
+//
+//==================================================================
 
+#include "button.h"
 
 struct Button::Impl {
     QPushButton btn;
@@ -47,4 +63,16 @@ void Button::onClick(std::function<void()> action) {
     QObject::connect(&impl->btn, &QPushButton::clicked, [action = std::move(action)] {
             action();
     });
+}
+
+//
+// Show the button 
+void Button::show() {
+    impl->btn.show();
+}
+
+//
+// Hide the button 
+void Button::hide() {
+    impl->btn.hide();
 }

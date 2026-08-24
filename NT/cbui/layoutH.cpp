@@ -1,3 +1,19 @@
+//========= Coypright (C) CBDE, 2026, All Rights Reserved ==========
+//
+// File:
+//      LayoutH.cpp
+//
+// Purpose:
+//      This is the horizontal layout implementation for cbui.
+//
+// Author:
+//      Vilho Salokannel <github.com/KippoCB>
+//
+// Edits:
+//      24-08-26: Create | Vilho Salokannel <github.com/KippoCB>
+//
+//==================================================================
+
 #include "layoutH.h"
 
 struct LayoutH::Impl {
@@ -11,7 +27,7 @@ QHBoxLayout *LayoutH::qtNativeHandle() {
 }
 
 LayoutH::LayoutH() :
-    impl(std::make_unique<Impl>()) 
+    impl(std::make_unique<Impl>())
 {
     
 }
@@ -28,4 +44,22 @@ void LayoutH::setParent(Widget &parent) {
 // Add a stretch 
 void LayoutH::addStretch() {
     impl->layout.addStretch();
+}
+
+//
+// Add a widget
+void LayoutH::addWidget(Widget &widget) {
+    impl->layout.addWidget(widget.qtNativeHandle());
+}
+
+//
+// Add layout Hor
+void LayoutH::addLayoutH(LayoutH &lyt) {
+    impl->layout.addLayout(lyt.qtNativeHandle());
+}
+
+//
+// Add a label
+void LayoutH::addLabel(Label &label) {
+    impl->layout.addWidget(label.qtNativeHandle());
 }
