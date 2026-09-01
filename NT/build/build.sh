@@ -140,6 +140,8 @@ cat > "$VERSION_HEADER" <<EOF
 
 #define CBDE_EVALUATION $EVAL
 #define CBDE_SHOWVERSION $SHOW
+
+#define CBDE_INSTALL_DIR "/data/data/com.termux/files/NT"
 EOF
 
 echo

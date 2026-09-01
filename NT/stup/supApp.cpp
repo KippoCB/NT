@@ -22,6 +22,7 @@
 #include <cbui/layoutH.h>
 #include <cbui/layoutV.h>
 
+#include "welcomePage.h"
 
 int main(int argc, char *argv[]) {
     //
@@ -33,17 +34,12 @@ int main(int argc, char *argv[]) {
     Window window(640, 480, "Installer");
 
     //
-    // Create central widget 
-    Widget central(WT_BEVEL);
+    // Create welcome screen
+    WelcomePage welcomePage;
 
     //
-    // Create layout for central 
-    LayoutV mainL;
-    mainL.setParent(central);
-     
-    //
     // Make the widget central 
-    window.setCentral(central);
+    window.setCentral(welcomePage.rootWidget);
 
     //
     // Show window and run loop

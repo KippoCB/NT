@@ -36,21 +36,18 @@ Widget::Widget(int widgetType) :
     if (widgetType == WT_BEVEL) {
         impl->widget.setStyleSheet(
                 "QWidget {"
-                "   background-color: #d4d0c8;"
-                "   border-left: 3px solid white;"
-                "   border-top: 3px solid white;"
-                "   border-right: 2px solid black;"
-                "   border-bottom: 2px solid black;"
+                "   background-color: white;"
+                "   border: #003593;"
+                "   border-radius: 6px;"
                 "}"
         );      
     } else if (widgetType == WT_INSET) {
         impl->widget.setStyleSheet(
                 "QWidget {"
                 "   background-color: white;"
-                "   border-left: 2px solid black;"
-                "   border-top: 2px solid black;"
-                "   border-right: 3px solid white;"
-                "   border-bottom: 3px solid white;"
+                "   border: #003593;"
+                "   border-radius: 6px;"
+                "}"        
         );
     }
 }
@@ -85,4 +82,16 @@ void Widget::show() {
 // Hide the widget 
 void Widget::hide() {
     impl->widget.hide();
+}
+
+//
+// Set the background image 
+void Widget::setBackground(std::string path) {
+    //
+    // Set the background image to auto fill 
+    impl->widget.setStyleSheet(
+            "QWidget {"
+            "   background-image: url(" + QString::fromStdString(path) + ");"
+            "}"
+    );
 }

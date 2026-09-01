@@ -53,6 +53,10 @@ public:
     //
     // Hide the label 
     void hide();
+
+    //
+    // Set the label text size 
+    void resize(int size);
 private:
     struct Impl;
     std::unique_ptr<Impl> impl;

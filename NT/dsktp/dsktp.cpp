@@ -16,6 +16,10 @@
 //
 //==================================================================
 
+#include <string>
+
+#include <public/version.h>
+
 #include "dsktp.h"
 
 Desktop::Desktop() :
@@ -31,10 +35,10 @@ Desktop::Desktop() :
     // rootWidget.qtNativeHandle()->setStyleSheet("")
     this->rootWidget.qtNativeHandle()->setStyleSheet(
             "QWidget {"
-            "   background-color: cornflowerblue;"
             "   border: none;"
             "}"
     );
+    this->rootWidget.setBackground(std::string(CBDE_INSTALL_DIR) + "/CBDE/img0.jpg");
 
     //
     // Set spacing for the root layout, this needs to be done via 

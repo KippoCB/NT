@@ -62,6 +62,10 @@ public:
     //
     // Hide widget 
     void hide();
+
+    //
+    // Set background image
+    void setBackground(std::string path);
 private:
     struct Impl;
     std::unique_ptr<Impl> impl;

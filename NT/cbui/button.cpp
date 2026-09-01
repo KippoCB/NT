@@ -36,11 +36,9 @@ Button::Button(std::string text) :
     // Style the button 
     impl->btn.setStyleSheet(
             "QPushButton {"
-            "   background-color: #d4d0c8;"
-            "   border-left: 3px solid white;"
-            "   border-top: 3px solid white;"
-            "   border-right: 2px solid black;"
-            "   border-bottom: 2px solid black;"
+            "   background-color: white;"
+            "   border: 1px #003593;"
+            "   border-radius: 6px;"
             "}"
     );
 

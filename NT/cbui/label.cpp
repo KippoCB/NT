@@ -57,3 +57,11 @@ void Label::show() {
 void Label::hide() {
     impl->label.hide();
 }
+
+//
+// Set the label size 
+void Label::resize(int size) {
+    //
+    // This is kind of ugly but we set the font size to size px
+    impl->label.setStyleSheet("font-size: " + QString::fromStdString(std::to_string(size)) + QString::fromStdString("px"));
+}

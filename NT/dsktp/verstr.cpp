@@ -50,7 +50,7 @@ Verstr::Verstr(std::string title) :
     //
     // We have to do this via qtNativeHandle as alignment options
     // are not yet implemented in cbui 
-    this->label.qtNativeHandle()->setAlignment(Qt::AlignLeft);
+    this->label.qtNativeHandle()->setAlignment(Qt::AlignRight);
 
     //
     // Set text color to white 
