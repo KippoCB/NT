@@ -17,7 +17,7 @@ WelcomePage::WelcomePage() :
 
     //
     // Place elements 
-    this->rootWidget.qtNativeHandle()->setLayout(this->layoutMain.qtNativeHandle());
+    widgetAddLayoutV(this->rootWidget, this->layoutMain);
     this->layoutMain.addLayoutV(this->layoutTop);
     this->layoutMain.addStretch();
     this->layoutMain.qtNativeHandle()->addLayout(this->layoutBottom.qtNativeHandle());
@@ -28,7 +28,7 @@ WelcomePage::WelcomePage() :
     
     //
     // Make the top layout align items to the center
-    layoutTop.qtNativeHandle()->setAlignment(Qt::AlignCenter);
+    layoutTop.alignCenter();
  
     //
     // Resize the texts 
@@ -38,7 +38,7 @@ WelcomePage::WelcomePage() :
     layoutTop.addLabel(titleText);
     layoutTop.addLabel(infoText);
 
-    layoutBottom.qtNativeHandle()->setAlignment(Qt::AlignCenter);
+    layoutBottom.alignCenter();
     layoutBottom.addButton(cancel);
     layoutBottom.addButton(next);
 }

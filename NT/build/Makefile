@@ -1,6 +1,6 @@
 .PHONY: all clean prepare build
 
-SUBDIRS = ../cbui ../stup ../dsktp
+SUBDIRS = ../cbui ../cbutil ../cbdiags ../stup ../dsktp
 
 all: prepare build
 

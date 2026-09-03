@@ -69,3 +69,9 @@ void LayoutV::addLabel(Label &label) {
 void LayoutV::addButton(Button &button) {
     impl->layout.addWidget(button.qtNativeHandle());
 }
+
+//
+// Align items to center 
+void LayoutV::alignCenter() {
+    impl->layout.setAlignment(Qt::AlignCenter);
+}

@@ -18,7 +18,7 @@ QT_CFLAGS := $(shell pkg-config --cflags Qt5Widgets Qt5X11Extras)
 QT_LIBS   := $(shell pkg-config --libs Qt5Widgets Qt5X11Extras)
 
 # Library search paths + libs 
-LDFLAGS := -L../cbui -lcbui $(QT_LIBS)
+LDFLAGS := -L../cbui -L../cbutil -lcbui -lcbutil $(QT_LIBS)
 
 .PHONY: all clean
 

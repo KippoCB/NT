@@ -57,6 +57,10 @@ public:
     //
     // Add button 
     void addButton(Button &button);
+
+    //
+    // Align to center 
+    void alignCenter();
 private:
     struct Impl;
     std::unique_ptr<Impl> impl;

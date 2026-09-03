@@ -1,5 +1,6 @@
 //========= Coypright (C) CBDE, 2026, All Rights Reserved ==========
 //
+//
 // File:
 //      LayoutH.cpp
 //
@@ -68,4 +69,10 @@ void LayoutH::addLabel(Label &label) {
 // Add a button 
 void LayoutH::addButton(Button &button) {
     impl->layout.addWidget(button.qtNativeHandle());
+}
+
+//
+// Align items to center 
+void LayoutH::alignCenter() {
+    impl->layout.setAlignment(Qt::AlignCenter);
 }

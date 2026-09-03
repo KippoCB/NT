@@ -25,6 +25,8 @@ if [ "$answer" = "Y" ] || [ "$answer" = "y" ]; then
 
     cp -r "../cbui/libcbui.so" \
           "../dsktp/desktop" \
+          "../cbutil/libcbutil.so" \
+          "../cbdiags/libcbdiags.so" \
           "../public/version.h" \
           "../dsktp/res/img0.jpg" \
           "$INSTALLDIR/CBDE/"

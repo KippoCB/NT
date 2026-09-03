@@ -6,6 +6,8 @@
 #include <cbui/button.h>
 #include <cbui/label.h>
 
+#include <cbutil/addLayout.h>
+
 class WelcomePage {
 public:
     //
