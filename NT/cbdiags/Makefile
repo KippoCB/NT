@@ -2,9 +2,9 @@ CXX = g++
 
 CXXFLAGS = -I/data/data/com.termux/files/home/cbdent/NT -std=c++17 -fPIC
 LDFLAGS = -shared
-LDLIBS = ../cbui/libcbui.so
+LDLIBS = ../cbui/libcbui.so ../cbutil/libcbutil.so
 
-TARGET = libcbiags.so
+TARGET = libcbdiags.so
 
 SOURCES = $(wildcard *.cpp)
 OBJECTS = $(SOURCES:.cpp=.o)

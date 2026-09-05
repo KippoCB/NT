@@ -9,7 +9,8 @@ WelcomePage::WelcomePage() :
     infoText("This program will guide you through the installation process."),
     copyrightText("Copyright (C) CBDE 2026"),
     next("next"),
-    cancel("cancel")
+    cancel("cancel"),
+    errBox("This is an error box")
 {
     //
     // Set backround image 
@@ -41,6 +42,8 @@ WelcomePage::WelcomePage() :
     layoutBottom.alignCenter();
     layoutBottom.addButton(cancel);
     layoutBottom.addButton(next);
+
+    next.onClick([ this ]() { handleOk(); });
 }
 
 WelcomePage::~WelcomePage() = default;
@@ -51,4 +54,8 @@ void WelcomePage::show() {
 
 void WelcomePage::hide() {
     this->rootWidget.hide();
+}
+
+void WelcomePage::handleOk() {
+    this->errBox.show();
 }

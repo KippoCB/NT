@@ -8,6 +8,8 @@
 
 #include <cbutil/addLayout.h>
 
+#include <cbdiags/errorBox.h>
+
 class WelcomePage {
 public:
     //
@@ -35,6 +37,10 @@ public:
     Button cancel;
 
     //
+    // Error box 
+    ErrorBox errBox;
+
+    //
     // Show the welcome screen 
     WelcomePage();
     ~WelcomePage();
@@ -46,4 +52,8 @@ public:
     //
     // Hide the page 
     void hide();
+private:
+    //
+    // Handle the next button click 
+    void handleOk();
 };

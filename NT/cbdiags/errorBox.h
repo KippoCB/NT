@@ -6,6 +6,8 @@
 #include <cbui/layoutV.h>
 #include <cbui/label.h>
 
+#include <cbutil/addLayout.h>
+
 class ErrorBox {
 public:
     //
@@ -31,6 +33,10 @@ public:
     //
     // Constructor
     ErrorBox(std::string message);
+
+    //
+    // Show the window 
+    void show();
 private:
     //
     // Close the window 

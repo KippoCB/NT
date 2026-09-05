@@ -4,7 +4,7 @@ cbde.system.core.channel="Developer Release"
 cbde.system.core.configuration="Debug"
 cbde.system.core.evaluation="true"
 
-cbde.system.core.version="28.030926-main-1052"
+cbde.system.core.version="30.030926-lps_shl-1114"
 cbde.system.core.showversion="true"
 
 cbde.system.core.basedir="/data/data/com.termux/files/cbde"

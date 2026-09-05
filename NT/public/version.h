@@ -5,12 +5,12 @@
 #define CBDE_CHANNEL "Developer Release"
 #define CBDE_CONFIGURATION "Debug"
 
-#define CBDE_VERSION "28.030926-main-1052"
+#define CBDE_VERSION "30.030926-lps_shl-1114"
 
-#define CBDE_BUILD 28
+#define CBDE_BUILD 30
 #define CBDE_BUILD_DATE "030926"
-#define CBDE_BUILD_TIME "1052"
-#define CBDE_GIT_BRANCH "main"
+#define CBDE_BUILD_TIME "1114"
+#define CBDE_GIT_BRANCH "lps_shl"
 
 #define CBDE_EVALUATION true
 #define CBDE_SHOWVERSION true
